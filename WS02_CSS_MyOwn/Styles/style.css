@@ -98,13 +98,17 @@ th, td {
 
 th {
     background-color: #e5aaf4;
+    color: #610161;
 }
 
 td {
     background-color: #fff0ff;
+    color: #330033;
 }
 
 form {
+    color: #330033;
+    text-align: center;
     display: flex;
     flex-direction: column;
     max-width: 400px;

@@ -17,14 +17,14 @@ h1 {
     padding: 20px;
 }
 
-div {
+.content-box {
     background-color: #ffe6ff;
     display: block;
     border: #610161 dotted 2px;
     border-radius: 20px;
     max-width: 600px;
     margin: auto;
-    padding: 20px;
+    padding: 15px;
 }
 
 p {
@@ -37,12 +37,11 @@ p {
 img {
     max-width: 100%;
     height: auto;
-    border: #fff0ff solid 10px;
+    border: #fff0ff solid 5px;
     border-radius: 50%;
     border-style: double;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 h2 {
@@ -53,6 +52,7 @@ h2 {
 
 ul {
     background-color: #ffe6ff;
+    color: #330033;
     font-size: 1.2em;
     text-align: center;
     list-style: none;
@@ -88,6 +88,8 @@ table {
     border-collapse: collapse;
     width: 30%;
     margin: auto;
+    margin-bottom: 30px;
+    box-shadow: #a64ca6 2px 2px 2px;
 }
 
 th, td {

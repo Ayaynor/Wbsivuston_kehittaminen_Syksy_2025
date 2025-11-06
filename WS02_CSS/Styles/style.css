@@ -10,7 +10,7 @@ h1 {
     font-size: 2em;
 }
 
-div {
+.content-box {
     padding: 20px;
     margin: 10px;
 }

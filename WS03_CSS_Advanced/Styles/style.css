@@ -45,7 +45,7 @@ img {
 }
 
 .filter-image {
-    filter: grayscale(50%) contrast(120%) brightness(90%);
+    filter: grayscale(100%) contrast(120%);
     transition: filter 0.5s ease;
 }
 
@@ -68,9 +68,9 @@ h2 {
     box-shadow: #a64ca6 2px 2px 2px;
     margin: auto;
     padding: 20px;
-    }
+}
       
-    .pseudo-list li:nth-child(even) {
+.pseudo-list li:nth-child(even) {
     background-color: #a64ca6;
     color: #e5aaf4;
     font-size: large;
@@ -79,8 +79,6 @@ h2 {
     box-shadow: #a64ca6 2px 2px 2px;
     margin: auto;
     padding: 20px;
-
-    
 }
 
 h3 {
@@ -181,41 +179,39 @@ input[type="submit"]:hover {
 }
 
 .animation-box {
-    width: 90px;
-    height: 90px;
-    background-color: #e5aaf4;
-    margin: 50px auto;
-    animation: moveAndColor 4s infinite;
+    width: 100px;
+    height: 100px;
     border-radius: 50px;
+    position: relative;
+    margin: 20px auto;
+    animation: move 3s infinite alternate;
 }
 
-@keyframes moveAndColor {
+@keyframes move {
     0% {
-        background-color: #e5aaf4;
-        transform: translateY(0);
-    }
-    50% {
-        background-color: #610161;
-        transform: translateY(-20px);
+        left: -150px;
+        background-color: #a64ca6 ;
     }
     100% {
-        background-color: #e5aaf4;
-        transform: translateY(0);
+        left: 150px;
+        background-color: #610161;
     }
 }
 
 .quote {
+    position: relative;
     font-style: italic;
     font-size: 1.5em;
     color: #610161;
     border-left: 4px solid #a64ca6;
     padding-left: 10px;
-    margin: 20px auto;
-    max-width: 600px;
 }
+
 .quote::before {
     content: "“";
     font-size: 2em;
-    vertical-align: bottom;
+    position: relative;
+    left: 0;
+    top: 0;
     color: #a64ca6;
 }

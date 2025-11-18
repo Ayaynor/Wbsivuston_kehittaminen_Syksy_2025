@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WS03</title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Ronja</h1>
+    <div>
+        <nav>
+            <ul class="navigation-menu">
+                <li><a href="#Harrastuksiani">Harrastuksiani</a></li>
+                <li><a href="#Sivusto">Sivusto</a></li>
+                <li><a href="#Lemmikkini">Lemmikkini</a></li>
+                <li><a href="#Harjoituksia">Harjoituksia</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content-box">
+        <p>Hei!<br>Mä olen Ronja.<br>Alunperin opiskellut leipuriksi, mutta nyt päätynyt opiskelemaan tietojenkäsittelyä ammattikorkeakouluun. Jipii.</p>
+        <img src="Images/ronja_9_2025_pienennetty.jpg" alt="Kuva minusta" class="filter-image">
+    </div>
+    
+    </header>
+    <main>
+
+        <section id="Harrastuksiani">
+            <h2>Harrastuksiani</h2>
+                <ul class="pseudo-list">
+                    <li>Tietokonepelit</li>
+                    <li>Timanttimaalaus</li>
+                    <li>Palapelit</li>
+                    <li>Omien lemmikkien hoito</li>
+                </ul>
+        </section>
+
+        <section id="Sivusto">
+            <h3>Tässä sivusto, jolla tykkään aika-ajoin tuhlata aikaa verkkopalapelien parissa:</h3>
+            <a href="https://www.jigidi.com/">Jigidi</a>
+        </section>
+
+        <section id="Lemmikkini">
+            <h3>Lemmikkini</h3>
+                <table>
+                    <tr>
+                        <th>Laji</th>
+                        <th>Nimi</th>
+                        <th>Väri</th>
+                    </tr>
+                    <tr>
+                        <td>Kissa</td>
+                        <td>Leo</td>
+                        <td>Tabby</td>
+                    </tr>
+                    <tr>
+                        <td>Kissa</td>
+                        <td>Pablo</td>
+                        <td>Tabby</td>
+                    </tr>
+                    <tr>
+                        <td>Rotta</td>
+                        <td>Sumu</td>
+                        <td>Valkoinen</td>
+                    </tr>
+                    <tr>
+                        <td>Rotta</td>
+                        <td>Nasu</td>
+                        <td>Valko/Vaaleanharmaa</td>
+                    </tr>
+                    <tr>
+                        <td>Rotta</td>
+                        <td>Koda</td>
+                        <td>Valko/Tummanharmaa</td>
+                    </tr>
+            </table>
+
+            <div class="grid-container">
+                <div class="grid-item"> <img src="Images/Leo_Kuva_pienennetty.jpg" alt=""></div>
+                <div class="grid-item"> <img src="Images/Pablo_kuva_pienennety.jpg" alt=""></div>
+                <div class="grid-item"> <img src="Images/Sumu_kuva_pienennetty.jpg" alt=""></div>
+                <div class="grid-item"> <img src="Images/Nasu_kuva_pienennetty.jpg" alt=""></div>
+                <div class="grid-item"> <img src="Images/Rene_kuva_pienennetty.jpg" alt=""></div>
+            </div>
+        </section> 
+
+        <section>
+            <form>
+                <label for="nimi">Nimi:</label>
+                <input type="text" id="nimi" name="nimi"><br><br>
+                <label for="sahkoposti">Sähköposti:</label>
+                <input type="email" id="sahkoposti" name="sahkoposti"><br><br>
+                <input type="submit" value="Lähetä">
+            </form>
+        </section>
+
+        <section id="Harjoituksia">
+            <button class="transition-button">Hover me</button>
+            <div class="animation-box"></div>
+            <blockquote class="quote">Vai niin &#128517</blockquote>
+        </section>
+
+        <footer>
+            <p>© 2025 Ronja</p>
+        </footer>
+
+    </main>
+</body>
+</html>

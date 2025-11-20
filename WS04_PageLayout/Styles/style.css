@@ -55,6 +55,12 @@ h1 {
     flex-grow: 1;
 }
 
+.nav-button:hover {
+    background-color: #610161;
+    color: white;
+    cursor: pointer;
+}
+
 p {
     font-size: 1.2em;
     line-height: 1.5;

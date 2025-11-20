@@ -4,30 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WS03</title>
+    <title>WS04</title>
     <link rel="stylesheet" href="Styles/style.css">
 </head>
 <body>
+    <!-- WS04 - Task 4 - header -->
     <header>
+
         <h1>Ronja</h1>
     <div>
+        <!-- WS04 - Task 4 - nav-bar -->
         <nav>
-            <ul class="navigation-menu">
-                <li><a href="#Harrastuksiani">Harrastuksiani</a></li>
-                <li><a href="#Sivusto">Sivusto</a></li>
-                <li><a href="#Lemmikkini">Lemmikkini</a></li>
-                <li><a href="#Harjoituksia">Harjoituksia</a></li>
+            <ul class="nav-menu">
+                <li><a href="#Harrastuksiani" class="nav-button">Harrastuksiani</a></li>
+                <li><a href="#Sivusto" class="nav-button">Sivusto</a></li>
+                <li><a href="#Lemmikkini" class="nav-button">Lemmikkini</a></li>
+                <li><a href="#Lomake" class="nav-button">Lomake</a></li>
+                <li><a href="#Harjoituksia" class="nav-button">Harjoituksia</a></li>
             </ul>
         </nav>
     </div>
+
     <div class="content-box">
         <p>Hei!<br>Mä olen Ronja.<br>Alunperin opiskellut leipuriksi, mutta nyt päätynyt opiskelemaan tietojenkäsittelyä ammattikorkeakouluun. Jipii.</p>
         <img src="Images/ronja_9_2025_pienennetty.jpg" alt="Kuva minusta" class="filter-image">
     </div>
     
     </header>
-    <main>
 
+    <!-- WS04 - Task 4 - main -->
+    <main>
+        
+        <!-- WS04 - Task 4 - section 1/5 -->
         <section id="Harrastuksiani">
             <h2>Harrastuksiani</h2>
                 <ul class="pseudo-list">
@@ -37,12 +45,14 @@
                     <li>Omien lemmikkien hoito</li>
                 </ul>
         </section>
-
+        
+        <!-- WS04 - Task 4 - section 2/5 -->
         <section id="Sivusto">
             <h3>Tässä sivusto, jolla tykkään aika-ajoin tuhlata aikaa verkkopalapelien parissa:</h3>
             <a href="https://www.jigidi.com/">Jigidi</a>
         </section>
 
+        <!-- WS04 - Task 4 - section 3/5 -->
         <section id="Lemmikkini">
             <h3>Lemmikkini</h3>
                 <table>
@@ -76,33 +86,55 @@
                         <td>Koda</td>
                         <td>Valko/Tummanharmaa</td>
                     </tr>
+                    <tr>
+                        <td>Koira</td>
+                        <td>Rudy</td>
+                        <td>Valkoinen</td>
+                    </tr>
             </table>
-
+            
+            <!-- WS04 - Task 2 - Grid Layout -->
             <div class="grid-container">
-                <div class="grid-item"> <img src="Images/Leo_Kuva_pienennetty.jpg" alt=""></div>
-                <div class="grid-item"> <img src="Images/Pablo_kuva_pienennety.jpg" alt=""></div>
-                <div class="grid-item"> <img src="Images/Sumu_kuva_pienennetty.jpg" alt=""></div>
-                <div class="grid-item"> <img src="Images/Nasu_kuva_pienennetty.jpg" alt=""></div>
-                <div class="grid-item"> <img src="Images/Rene_kuva_pienennetty.jpg" alt=""></div>
+                <div class="grid-item"> <img src="Images/Leo_Kuva_pienennetty.jpg" alt="Leipä-kissa"></div>
+                <div class="grid-item"> <img src="Images/Pablo_kuva_pienennety.jpg" alt="Väsy kissa"></div>
+                <div class="grid-item"> <img src="Images/Sumu_kuva_pienennetty.jpg" alt="Rotta puuhäkkelissä"></div>
+                <div class="grid-item"> <img src="Images/Nasu_kuva_pienennetty.jpg" alt="Hämmentynyt rotta "></div>
+                <div class="grid-item"> <img src="Images/Rene_kuva_pienennetty.jpg" alt="Utelias rotta"></div>
+                <div class="grid-item"> <img src="Images/Rudy_kuva_pienennetty.jpg" alt="Koira-rukka"></div>
             </div>
         </section> 
 
-        <section>
-            <form>
-                <label for="nimi">Nimi:</label>
-                <input type="text" id="nimi" name="nimi"><br><br>
-                <label for="sahkoposti">Sähköposti:</label>
-                <input type="email" id="sahkoposti" name="sahkoposti"><br><br>
-                <input type="submit" value="Lähetä">
-            </form>
+        <!-- WS04 - Task 4 - section 4/5 -->
+        <section id="Lomake">
+
+            <!-- WS04 - Task 3 - Media Queries -->
+            <div class="responsive-box">
+                <form>
+                    <label for="nimi">Nimi:</label>
+                    <input type="text" id="nimi" name="nimi"><br><br>
+                    <label for="sahkoposti">Sähköposti:</label>
+                    <input type="email" id="sahkoposti" name="sahkoposti"><br><br>
+                    <input type="submit" value="Lähetä">
+                </form>
+            </div>
         </section>
 
+        <!-- WS04 - Task 4 - section 5/5 -->
         <section id="Harjoituksia">
             <button class="transition-button">Hover me</button>
             <div class="animation-box"></div>
+
+            <!-- WS04 - Task 1 - Flexbox Layout -->
+            <div class="flex-container">
+                <div class="box">Laatikko 1</div>
+                <div class="box">Laatikko 2</div>
+                <div class="box">Laatikko 3</div>
+            </div>
             <blockquote class="quote">Vai niin &#128517</blockquote>
+            
         </section>
 
+        <!-- WS04 - Task 4 - footer -->
         <footer>
             <p>© 2025 Ronja</p>
         </footer>

@@ -25,13 +25,34 @@ h1 {
 }
 
 .content-box {
-    background-color: #ffe6ff;
+    background-color: #ffe6ff;  
+    border-radius: 15px;
+    box-shadow: #a64ca6 4px 4px 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #fff0ff;
+}
+
+.nav-button {
     display: block;
-    border: #610161 dotted 2px;
-    border-radius: 20px;
-    max-width: 600px;
-    margin: auto;
-    padding: 15px;
+    color: #610161;
+    background-color: #e5aaf4;
+    border: none;
+    text-align: center;
+    padding: 14px 20px;
+    margin: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    flex-grow: 1;
 }
 
 p {
@@ -133,6 +154,7 @@ td {
     color: #330033;
 }
 
+/* WS04 - Task 2 - Grid Layout */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -140,6 +162,44 @@ td {
     max-width: 800px;
     margin: auto;
     margin-bottom: 30px;
+}
+
+.grid-item {
+    border: 2px solid #a64ca6;
+    padding: 10px;
+    text-align: center;
+    background-color: #ffe6ff;
+    box-shadow: #a64ca6 2px 2px 2px;
+}
+
+.responsive-box {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin: auto;
+    display: block;
+}
+
+/* WS04 - Task 3 - Media Queries */
+@media (max-width: 600px) {
+    .responsive-box {
+        border: #330033 dashed 2px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .responsive-box {
+        border: #610161 solid 4px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 901px) {
+    .responsive-box {
+        border: #a64ca6 double 4px;
+        padding: 10px;
+    }
 }
 
 form {
@@ -212,6 +272,25 @@ input[type="submit"]:hover {
         left: 150px;
         background-color: #610161;
     }
+}
+
+/* WS04 - Task 1 - Flexbox Layout */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.box {
+    background-color: #e5aaf4;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    margin: 10px;
 }
 
 .quote {

@@ -142,3 +142,8 @@ input[type="submit"]:hover {
     background-color: #610161;
     cursor: pointer;
 }
+
+footer a:hover {
+    background-color: #610161;
+    color: white;
+}

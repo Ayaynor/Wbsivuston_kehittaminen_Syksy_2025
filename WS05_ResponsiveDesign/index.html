@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WS04</title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <header>
+
+        <h1>Ronja</h1>
+
+        <!-- WS05 - Task 4 - Create a Responsive Navigation Bar --> 
+        <nav>
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="menu-toggle">☰</label>
+            <ul class="responsive-nav-menu">
+                <li><a href="#Harrastuksiani" class="nav-button">Harrastuksiani</a></li>
+                <li><a href="#Sivusto" class="nav-button">Sivusto</a></li>
+                <li><a href="#Lemmikkini" class="nav-button">Lemmikkini</a></li>
+                <li><a href="#Lomake" class="nav-button">Lomake</a></li>
+                <li><a href="#Harjoituksia" class="nav-button">Harjoituksia</a></li>
+            </ul>
+        </nav>
+
+    <div class="content-box">
+        <p>Hei!<br>Mä olen Ronja.<br>Alunperin opiskellut leipuriksi, mutta nyt päätynyt opiskelemaan tietojenkäsittelyä ammattikorkeakouluun. Jipii.</p>
+        <img src="Images/ronja_9_2025_pienennetty.jpg" alt="Kuva minusta" class="filter-image" id="ronja-image">
+    </div>
+    
+    </header>
+
+    <main>
+        
+        <section id="Harrastuksiani">
+            <h2>Harrastuksiani</h2>
+                <ul class="pseudo-list">
+                    <li>Tietokonepelit</li>
+                    <li>Timanttimaalaus</li>
+                    <li>Palapelit</li>
+                    <li>Omien lemmikkien hoito</li>
+                </ul>
+        </section>
+        
+        <section id="Sivusto">
+            <!-- WS05 - Task 3 - Use Media Queries -->
+            <div class="media-query-box">
+                <h3>Tässä sivusto, jolla tykkään aika-ajoin tuhlata aikaa verkkopalapelien parissa:</h3>
+                <a href="https://www.jigidi.com/">Jigidi</a>
+            </div>
+        </section>
+
+        <section id="Lemmikkini">
+            <h3>Lemmikkini</h3>
+                <table>
+                    <tr>
+                        <th>Laji</th>
+                        <th>Nimi</th>
+                        <th>Väri</th>
+                    </tr>
+                    <tr>
+                        <td>Kissa</td>
+                        <td>Leo</td>
+                        <td>Tabby</td>
+                    </tr>
+                    <tr>
+                        <td>Kissa</td>
+                        <td>Pablo</td>
+                        <td>Tabby</td>
+                    </tr>
+                    <tr>
+                        <td>Rotta</td>
+                        <td>Sumu</td>
+                        <td>Valkoinen</td>
+                    </tr>
+                    <tr>
+                        <td>Rotta</td>
+                        <td>Nasu</td>
+                        <td>Valko/Vaaleanharmaa</td>
+                    </tr>
+                    <tr>
+                        <td>Rotta</td>
+                        <td>Koda</td>
+                        <td>Valko/Tummanharmaa</td>
+                    </tr>
+                    <tr>
+                        <td>Koira</td>
+                        <td>Rudy</td>
+                        <td>Valkoinen</td>
+                    </tr>
+            </table>
+            
+            <div class="grid-container">
+                <div class="grid-item"> <img src="Images/Leo_Kuva_pienennetty.jpg" alt="Leipä-kissa"></div>
+                <div class="grid-item"> <img src="Images/Pablo_kuva_pienennety.jpg" alt="Väsy kissa"></div>
+                <div class="grid-item"> <img src="Images/Sumu_kuva_pienennetty.jpg" alt="Rotta puuhäkkelissä"></div>
+                <div class="grid-item"> <img src="Images/Nasu_kuva_pienennetty.jpg" alt="Hämmentynyt rotta "></div>
+                <div class="grid-item"> <img src="Images/Rene_kuva_pienennetty.jpg" alt="Utelias rotta"></div>
+                <div class="grid-item"> <img src="Images/Rudy_kuva_pienennetty.jpg" alt="Koira-rukka"></div>
+            </div>
+        </section> 
+
+        <section id="Lomake">
+            <h3>Lomake</h3>
+            <div class="responsive-box">
+                <form>
+                    <label for="nimi">Nimi:</label>
+                    <input type="text" id="nimi" name="nimi"><br><br>
+                    <label for="sahkoposti">Sähköposti:</label>
+                    <input type="email" id="sahkoposti" name="sahkoposti"><br><br>
+                    <input type="submit" value="Lähetä">
+                </form>
+            </div>
+        </section>
+
+        <section id="Harjoituksia">
+            <h3>irrallisia html/CSS-harjoituksia</h3>
+            <button class="transition-button">Hover me</button>
+            <div class="animation-box"></div>
+
+            <div class="flex-container">
+                <div class="box">Laatikko 1</div>
+                <div class="box">Laatikko 2</div>
+                <div class="box">Laatikko 3</div>
+            </div>
+            
+            <!-- WS05 - Task 1 - Create a Responsive Layout -->
+            <div class="responsive-container">
+                <!-- WS05 Task 2 - Add a Responsive Image-->
+                <div class="column"><img src="Images/Piki_pentuna.jpg" alt="Siskon koira Piki pentuna" class="responsive-image"></div>
+                <div class="column"><img src="Images/Piki.jpg" alt="Siskon koira Piki aikuisena" class="responsive-image"></div>
+            </div>
+
+            
+            
+        </section>
+
+        <footer>
+            <blockquote class="quote">Vai niin &#128517</blockquote> 
+            <a href="https://ayaynor.github.io/Wbsivuston_kehittaminen_Syksy_2025">Takaisin aloitus-sivulle</a>
+            <p>© 2025 Ronja</p>
+        </footer>
+
+    </main>
+</body>
+</html>

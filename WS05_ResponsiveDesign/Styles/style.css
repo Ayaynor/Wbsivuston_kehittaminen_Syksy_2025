@@ -1,0 +1,441 @@
+body {
+    background-color: #f7d5ff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.responsive-header {
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: #a64ca6 4px 4px 5px;
+}
+
+h1 {
+    color: #610161;
+    background: linear-gradient(135deg, #e5aaf4 0%, #f7d5ff 50%, #e5aaf4 100%);
+    border-radius: 20px;
+    box-shadow: #a64ca6 4px 4px 5px;
+    font-size: 3em;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.content-box {
+    background-color: #ffe6ff;  
+    border-radius: 15px;
+    box-shadow: #a64ca6 4px 4px 5px;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* WS05 - Task 4 - Create a Responsive Navigation Bar */
+.responsive-nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-toggle, #nav-toggle {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    #nav-toggle {
+        position: absolute;
+        left: -9999px;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+
+    .menu-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 20px;
+        margin: 10px auto;
+        background-color: #e5aaf4;
+        color: #610161;
+        padding: 10px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .responsive-nav-menu {
+        display: none;
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    #nav-toggle:checked ~ .responsive-nav-menu {
+        display: flex;
+    }
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #330033;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: #fff0ff solid 5px;
+    border-radius: 50%;
+    border-style: double;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.filter-image {
+    filter: grayscale(100%) contrast(120%);
+    transition: filter 0.5s ease;
+}
+
+.filter-image:hover {
+    filter: grayscale(0%);
+}
+
+h2 {
+    color: #610161;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.pseudo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 35px;
+
+}
+
+.pseudo-list li {
+    list-style: none;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.pseudo-list li:nth-child(odd) {
+    background-color: #e5aaf4;
+    color: #610161;
+    font-size: large;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: #a64ca6 2px 2px 2px;
+}
+      
+.pseudo-list li:nth-child(even) {
+    background-color: #a64ca6;
+    color: #e5aaf4;
+    font-size: large;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: #a64ca6 2px 2px 2px;
+}
+
+h3 {
+    color: #610161;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* WS05 - Task 3 - Use Media Queries */
+.media-query-box {
+    border: #a64ca6 solid 3px;
+    border-radius: 10px;
+    box-shadow: #a64ca6 2px 2px 2px;
+    max-width: 400px;
+    padding: 20px;
+    margin: auto;
+}
+
+@media (max-width: 700px) {
+    .media-query-box {
+        background-color: #a64ca6;
+        border-color: #330033;
+    }
+}
+
+@media (min-width: 701px){
+    .media-query-box {
+        background-color: #fff0ff;
+        border-color: #e5aaf4;
+    }
+}
+
+a {
+    color: #a64ca6;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    background-color: #e5aaf4;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 200px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: #a64ca6 2px 2px 2px;
+}
+
+th, td {
+    border: 1px solid #a64ca6;
+    padding: 8px;
+    text-align: left;
+    text-decoration: none;
+}
+
+th {
+    background-color: #e5aaf4;
+    color: #610161;
+}
+
+td {
+    background-color: #fff0ff;
+    color: #330033;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 2000px;
+    width: 90%;
+    margin: 0 auto 20px;
+    justify-items: center;
+    justify-items: stretch;
+}
+
+@media (max-width: 1000px) and (min-width: 601px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid-item {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain; 
+    display: block;
+}
+
+.responsive-box {
+    border-radius: 10px;
+    box-shadow: #a64ca6 2px 2px 2px;
+    max-width: 400px;
+    padding: 20px;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+    .responsive-box {
+        border: #330033 dashed 2px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .responsive-box {
+        border: #610161 solid 4px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 901px) {
+    .responsive-box {
+        border: #a64ca6 double 4px;
+        padding: 10px;
+    }
+}
+
+form {
+    color: #330033;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ffe6ff;
+    border-radius: 4px;
+    outline-color: #610161;
+}
+
+input[type="submit"] {
+    background-color: #e5aaf4;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #610161;
+    cursor: pointer;
+}
+
+.transition-button {
+    background-color: #e5aaf4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto;
+}
+
+.transition-button:hover {
+    background-color: #610161;
+    cursor: pointer;
+}
+
+.animation-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: relative;
+    margin: 20px auto;
+    animation: move 3s infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        left: -150px;
+        background-color: #a64ca6 ;
+    }
+    100% {
+        left: 150px;
+        background-color: #610161;
+    }
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.box {
+    background-color: #e5aaf4;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    margin: auto 10px;
+}
+
+/* WS05 - Task 1 - Create a Responsive Layout */
+.responsive-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.column {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+}
+
+/* WS05 - Task 2 - Add a Responsive Image */
+.responsive-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;           
+    object-fit: cover;   
+    border: #330033 solid 4px;
+    border-radius: 10px;
+    box-shadow: #a64ca6 2px 2px 2px;
+    display: block;
+    margin: auto;
+
+}
+
+.quote {
+    position: relative;
+    font-style: italic;
+    font-size: 1.5em;
+    color: #610161;
+    border-left: 4px solid #a64ca6;
+    padding-left: 25px;
+}
+
+.quote::before {
+    content: "“";
+    font-size: 2.2rem;
+    line-height: 1;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    color: #a64ca6;
+    pointer-events: none;
+}
+
+footer a:hover {
+    background-color: #610161;
+    color: white;
+}

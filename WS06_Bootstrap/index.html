@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WS06</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <header>
+        <!-- WS06 - Task 3 - Create a Responsive Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tetriary">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-1" href="#">WS07 - Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav fs-5">
+                        <a class="nav-link" href="https://ayaynor.github.io/Wbsivuston_kehittaminen_Syksy_2025/">Etusivu (Kaikki tehtävät)</a>
+                        <a class="nav-link" href="#Harrastuksiani">Harrastuksiani</a>
+                        <a class="nav-link" href="#Sivusto">Sivusto</a>
+                        <a class="nav-link" href="#Lemmikkini">Lemmikkini</a>
+                        <a class="nav-link" href="#Lomake">Lomake</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="text-center">
+            <div class="container my-5">
+                <h1 class="my-3">Kuka olen?</h1>
+                <p class="fs-5"><em>Hei! <br> Minä olen Ronja! <br> Alunperin opiskellut leipuriksi, mutta nyt päätynyt opiskelemaan tietojenkäsittelyä ammattikorkeakouluun. Jipii! </em></p>
+                <img src="Images/ronja_9_2025_pienennetty.jpg" alt="Kuva minusta" class="rounded-circle my-3 mx-auto d-block">
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <section id="Harrastuksiani">
+            <h2 class="text-center my-3">Harrastuksiani</h2>
+                <ul class="list-group list-group-flush align-items-center">
+                    <li class="list-group-item text-center">Tietokonepelit</li>
+                    <li class="list-group-item text-center">Timanttimaalaus</li>
+                    <li class="list-group-item text-center">Palapelit</li>
+                    <li class="list-group-item text-center">Omien lemmikkien hoito</li>
+                </ul>
+        </section>
+    
+        <section class="text-center my-5" id="Sivusto">
+            <div class="container">
+                <h3>Sivusto</h3>
+                    <p>Tässä sivusto, jolla tykkään aika-ajoin tuhlata aikaa verkkopalapelien parissa:</p>
+                    <a href="https://www.jigidi.com/">Jigidi</a>
+            </div>
+        </section>
+        
+        <section class="text-center my-5" id="Lemmikkini">
+            <h3 class="my-4">Lemmikkini</h3>
+            <div class="container">
+                <table class="table table-striped table-responsive">
+                    <tr>
+                        <th>Laji</th>
+                        <th>Nimi</th>
+                        <th>Väri</th>
+                    </tr>
+                    <tr>
+                        <td>Kissa</td>
+                        <td>Leo</td>
+                        <td>Tabby</td>
+                    </tr>
+                    <tr>
+                        <td>Kissa</td>
+                        <td>Pablo</td>
+                        <td>Tabby</td>
+                    </tr>
+                    <tr>
+                        <td>Rotta</td>
+                        <td>Sumu</td>
+                        <td>Valkoinen</td>
+                    </tr>
+                    <tr>
+                        <td>Rotta</td>
+                        <td>Nasu</td>
+                        <td>Valko/Vaaleanharmaa</td>
+                    </tr>
+                    <tr>
+                        <td>Rotta</td>
+                        <td>Koda</td>
+                        <td>Valko/Tummanharmaa</td>
+                    </tr>
+                    <tr>
+                        <td>Koira</td>
+                        <td>Rudy</td>
+                        <td>Valkoinen</td>
+                    </tr>
+            </table>
+        </div>
+        <!-- WS06 - Task 5 - Add a Bootstrap Alert -->
+        <div class="alert alert-light alert-dismissible fade show text-center" role="alert">
+            <strong>Pöö!</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <!-- WS06 - Task 1 - Add a Bootstrap Grid Layout -->
+        <div class="container">
+            <div class="row my-3 justify-content-center">
+                <div class="col-md-3">
+                    <!-- WS06 - Task 4 - Add a Bootstrap Card -->
+                    <div class="card text-center">
+                        <div><img src="Images/Leo_Kuva_pienennetty.jpg" class="card-img-top" alt="Leipä-kissa"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Leo</h4>
+                        <a href="#Lemmikkini" class="btn btn-primary">Takaisin taulukkoon</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div><img src="Images/Pablo_kuva_pienennety.jpg" class="card-img-top" alt="Väsy kissa"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Pablo</h4>
+                        <a href="#Lemmikkini" class="btn btn-primary">Takaisin taulukkoon</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div><img src="Images/Sumu_kuva_pienennetty.jpg" class="card-img-top" alt="Rotta puuhäkkelissä"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Sumu</h4>
+                        <a href="#Lemmikkini" class="btn btn-primary">Takaisin taulukkoon</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div><img src="Images/Nasu_kuva_pienennetty.jpg" class="card-img-top" alt="Hämmentynyt rotta "></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Nasu</h4>
+                        <a href="#Lemmikkini" class="btn btn-primary">Takaisin taulukkoon</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <img src="Images/Rene_kuva_pienennetty.jpg" class="card-img-top" alt="Utelias rotta">
+                        <div class="card-body">
+                            
+                            <h4 class="card-title">Rene</h4>
+                            <a href="#Lemmikkini" class="btn btn-primary">Takaisin taulukkoon</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <img src="Images/Rudy_kuva_pienennetty.jpg" class="card-img-top" alt="Koira-rukka">
+                    <div class="card-body">
+                        <h4 class="card-title">Rudy</h4>
+                        <a href="#Lemmikkini" class="btn btn-primary">Takaisin taulukkoon</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Lomake" class="my-3">
+        <h4 class="text-center">Lomake</h4>
+            <div class="container text-center py-5">
+                <form>
+                    <div class="row g-3 justify-content-center">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Etunimi" aria-label="Etunimi">
+                        </div>
+                            <div class="col">
+                            <input type="text" class="form-control" placeholder="Sukunimi" aria-label="Sukunimi">
+                        </div>
+                        <div>
+                            <input type="email" class="form-control" placeholder="Sähköposti" aria-label="Sähköposti">
+                        </div>
+                        <div class="mb-2">
+                            <textarea class="form-control" id="messageTextarea" rows="3" placeholder="Viesti"></textarea>
+                        </div> 
+
+                        <!-- WS06 - Task 2 - Add a Bootstrap Button-->
+                        <div class="mb-3">
+                            <button class="btn btn-secondary">Lähetä</button>
+                        </div>   
+                    </div>
+                </form>
+            </div>
+    </section>
+
+    <footer class="bg-light text-black fs-4 py-3">
+        <div class="container text-center">
+            <p>© 2025 Ronja</p>
+        </div>
+    </footer>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

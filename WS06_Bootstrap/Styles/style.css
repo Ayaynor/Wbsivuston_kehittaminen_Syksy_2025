@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffe7f8;
+}
+
+.fixed-top {
+    background-color: #fdc6ed;
+}
+
+h1 {
+    padding-top: 10%;
+}
+
+img, .card-img-top {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.btn-primary {
+    background-color: #ff70d4;
+    border-color: #ff70d4;
+}
+
+form {
+    background-color: #fdc6ed;
+    padding: 2%;
+}

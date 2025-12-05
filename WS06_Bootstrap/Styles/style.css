@@ -23,6 +23,12 @@ img, .card-img-top {
     border-color: #ff70d4;
 }
 
+.btn-primary:hover {
+    color: #ff70d4;
+    background-color: #fdc6ed;
+    border-color: #ff70d4;
+}
+
 form {
     background-color: #fdc6ed;
     padding: 2%;

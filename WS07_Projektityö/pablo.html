@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leo&Pablo - Pablo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+    <header>
+
+        <!--navigointi palkki. Otettu bootstrapistä ja muokattu omaan tarpeeseen-->   
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+            <!--navigointiin lisätty koristeeksi itse luoto logo-->
+            <a class="navbar-brand" href="index.html"><img class="LPlogo" src="Images/LP-Logo_B_wide.png" alt="Logo" width="150" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <!--Myös avattavan navigoinnin yläreunassa on koristeena itse luotu logo-->
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="LPlogo" src="Images/LP-Logo_W_wide.png" alt="Logo" width="150" height="50"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Homepage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="leo.html">Leo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pablo.html">Pablo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="extra.html">Extra material</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Workshop-tasks</a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://ayaynor.github.io/Wbsivuston_kehittaminen_Syksy_2025/">All Tasks</a></li>
+                                <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="https://ayaynor.github.io/Wbsivuston_kehittaminen_Syksy_2025/WS01_HTML/">WS01 - HTML Intro</a></li>
+                            <li><a class="dropdown-item" href="https://ayaynor.github.io/Wbsivuston_kehittaminen_Syksy_2025/WS02_CSS_MyOwn/">WS02 - CSS Basics</a></li>
+                            <li><a class="dropdown-item" href="https://ayaynor.github.io/Wbsivuston_kehittaminen_Syksy_2025/WS03_CSS_Advanced/">WS03 - Advanced CSS</a></li>
+                            <li><a class="dropdown-item" href="https://ayaynor.github.io/Wbsivuston_kehittaminen_Syksy_2025/WS04_PageLayout/">WS04 - Page Layout</a></li>
+                            <li><a class="dropdown-item" href="https://ayaynor.github.io/Wbsivuston_kehittaminen_Syksy_2025/WS05_ResponsiveDesign/">WS05 - Responsive Design</a></li>
+                            <li><a class="dropdown-item" href="https://ayaynor.github.io/Wbsivuston_kehittaminen_Syksy_2025/WS06_Bootstrap/">WS06 - Bootstrap</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Jokaisella sivulla samanlainen aloitus-->
+        <div class="intro-container">
+            <h1 class="fw-bold">Pablo</h1>
+            <p class="fs-3">This guy is called Pablo <br> He is very sweet, but doesn't know what personal space means...</p>
+            <img src="Images/Pablo/Pablo41-1.jpg" alt="">
+        </div>
+
+        <!--Mode-Toggle-->
+        <button class="dark-mode-btn" onclick="myDarkMode()" >&#127763</button>
+        
+        <!--Statistiikkakortteja-->
+        <div>
+            <h2>Important Statistics</h2>
+            <div class="row">
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                    <div class="card text-center">
+                        <img src="Images/Pablo/Pablo2atsiuh.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text fs-3">Most Sneezes In a Row</p>
+                            <p class="stat">15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 mb-3">
+                    <div class="card text-center">
+                        <img src="Images/Pablo/Pablo18falling.jpg" class="card-img-top" alt="Cat Stretching">
+                        <div class="card-body">
+                            <p class="card-text fs-3">Fallen off a Couch</p>
+                            <p class="stat">A lot</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card text-center">
+                        <img src="Images/Pablo/Pablo25unbothered.jpg" class="card-img-top" alt="Cat Stretching">
+                        <div class="card-body">
+                            <p class="card-text fs-3">Vet Expenses</p>
+                            <p class="stat">236,34€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fav-list">
+            <h2>Favourite Things - TOP 5</h2>
+                <ul class="fs-2">
+                    <li>&#128571 Chin Scratches</li>
+                    <li>&#127775 Spring Toys</li>
+                    <li>&#127907 Feather Wand</li>
+                    <li>&#127831 Food</li>
+                    <li>&#128572 Nighttime Zoomies</li>
+                </ul>
+        </div>
+
+        <!--Takaisin ylös-nappi-->
+        <button onclick="topFunction()" id="backToTopBtn" title="Go to top">⇧</button>
+
+        <!--Alareunan kissa-tarra-->
+        <div>
+            <img src="Images/Pablo/Pablo-tarra.png" alt="" class="bottom-image-right">
+        </div>
+        <div class="container">
+            <div class="animation-logo"><img src="Images/LP-Logo_B_wide.png" alt=""></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Ronja</p>
+    </footer>
+    
+    <!--Bootstrapin js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+    <!--Itse lisätty js. takaisin ylös-nappi-->
+    <script>
+
+    let mybutton = document.getElementById("backToTopBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+
+
+    function myDarkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    }
+
+    </script>
+</body>
+</html>

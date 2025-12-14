@@ -126,7 +126,7 @@
         </div>
 
         <div class="container">
-            <div class="animation-logo"><img src="Images/LP-Logo_B_wide.png" alt=""></div>
+            <div class="animation-logo"><img src="Images/LP-Logo_B_wide.png" alt="" class="logo-image"></div>
         </div>
         
     </main>
@@ -140,6 +140,11 @@
     
     <!--Itse lisätty js. takaisin ylös-nappi-->
     <script>
+
+    function myDarkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    }
 
     let mybutton = document.getElementById("backToTopBtn");
     
@@ -157,6 +162,7 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
         }
+
     </script>
 </body>
 </html>

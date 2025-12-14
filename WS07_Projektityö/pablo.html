@@ -75,7 +75,7 @@
                     <div class="card text-center">
                         <img src="Images/Pablo/Pablo2atsiuh.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <p class="card-text fs-3">Most Sneezes In a Row</p>
+                            <p class="card-text fs-3">Most Sneezes <br> In a Row</p>
                             <p class="stat">15</p>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                     <div class="card text-center">
                         <img src="Images/Pablo/Pablo18falling.jpg" class="card-img-top" alt="Cat Stretching">
                         <div class="card-body">
-                            <p class="card-text fs-3">Fallen off a Couch</p>
+                            <p class="card-text fs-3">Fallen off <br> a Couch</p>
                             <p class="stat">A lot</p>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                     <div class="card text-center">
                         <img src="Images/Pablo/Pablo25unbothered.jpg" class="card-img-top" alt="Cat Stretching">
                         <div class="card-body">
-                            <p class="card-text fs-3">Vet Expenses</p>
+                            <p class="card-text fs-3">Vet <br> Expenses</p>
                             <p class="stat">236,34€</p>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
             <img src="Images/Pablo/Pablo-tarra.png" alt="" class="bottom-image-right">
         </div>
         <div class="container">
-            <div class="animation-logo"><img src="Images/LP-Logo_B_wide.png" alt=""></div>
+            <div class="animation-logo"><img src="Images/LP-Logo_B_wide.png" alt="" class="logo-image"></div>
         </div>
     </main>
 
@@ -133,6 +133,11 @@
     
     <!--Itse lisätty js. takaisin ylös-nappi-->
     <script>
+    
+    function myDarkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    }
 
     let mybutton = document.getElementById("backToTopBtn");
     
@@ -149,12 +154,6 @@
     function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-    }
-
-
-    function myDarkMode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
     }
 
     </script>

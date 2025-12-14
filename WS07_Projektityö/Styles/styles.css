@@ -46,10 +46,13 @@ main {
     margin: 0 auto;
     margin-bottom: 3rem;
     border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(50, 50, 150, 0.35);
 }
+
 .intro-container h1 {
     font-weight: 700;
     font-size: 4rem;
+    padding-top: 2rem;
 }
 
 .intro-container p {
@@ -58,15 +61,15 @@ main {
 
 .intro-container img {
     width: 100%;
-    max-height: 900;
+    max-height: 900px;
     margin-top: 1rem;
-    box-shadow: 0 8px 20px rgba(50, 50, 150, 0.35);
 }
 
 h2 {
     text-align: center;
     font-size: 40px;
-    padding: 4rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
     background-color: rgba(186, 186, 255, 0.6);
 }
 
@@ -91,18 +94,8 @@ h2 {
     transform: translateY(-50%);
 }
 
-.fav-list {
-    background-color: white;
-    margin-top: 2rem;
-    box-shadow: 0 8px 20px rgba(50, 50, 150, 0.35);
-}
-
-.fav-list ul, .fav-list li{
-    list-style: none;
-    width: 100%;
-    padding: 10px;
-    margin: 0;
-    text-align: center;
+h3 {
+    margin-bottom: 0;
 }
 
 .card {
@@ -121,7 +114,22 @@ h2 {
 }
 
 .stat {
-    font-size: 60px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.fav-list {
+    background-color: white;
+    margin-top: 2rem;
+    box-shadow: 0 8px 20px rgba(50, 50, 150, 0.35);
+}
+
+.fav-list ul, .fav-list li{
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
 }
 
 #backToTopBtn {
@@ -165,6 +173,36 @@ h2 {
     height: auto;
     display: block;
     margin-top: 3rem;
+}
+
+.form-control {
+    border: none;
+    padding: 0;
+    text-align: center;
+}
+
+.alert {
+    background-color: #a3a3fd;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.fanmail-btn {
+    border: none;
+    outline: none; 
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    border-radius:5%;
+    font-size: 30px;
+    padding: 1rem;
+}
+
+.fanmail-btn:hover {
+    width: 200px;
+    height: auto;
+    background-color: rgba(132, 132, 248, 0.6);
 }
 
 .gallery-row {
@@ -221,7 +259,8 @@ footer {
     color: black;
     padding: 20px 10px;
     margin-top: 10px;
-    font-size: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .dark-mode-btn {
@@ -231,4 +270,73 @@ footer {
     margin: 0 auto;
     border: none;
     padding-bottom: 2rem;
+}
+
+.dark-mode {
+    background-color: black;
+    color: #babaff;
+}
+
+.dark-mode div {
+    background-color: #14142f;
+}
+
+.dark-mode img {
+    filter: brightness(90%);
+}
+
+.dark-mode .navbar-brand .LPlogo {
+    filter: invert(1);
+}
+
+.dark-mode .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.dark-mode .carousel-caption {
+    background-color: transparent;
+}
+
+.dark-mode .card-body {
+    background-color: #a3a3fd;
+}
+
+.dark-mode .fanmail-form {
+    background-color: black;
+}
+
+.dark-mode .fanmail-form-row {
+    background-color: black;
+}
+
+.dark-mode .form-control {
+    background-color: #a3a3fd;
+}
+
+.dark-mode .fanmail-form-row div {
+    background-color: black;
+}
+
+.dark-mode .alert, h2 {
+    background-color: rgba(132, 132, 248, 0.6);
+}
+
+.dark-mode .container {
+    background-color: black;
+}
+
+.dark-mode .animation-logo {
+    background-color: black;
+}
+
+.dark-mode .logo-image {
+    filter: invert(1);
+}
+
+.dark-mode footer {
+    background-color: #14142f;
+}
+
+.dark-mode footer p {
+    filter: invert(1);
 }

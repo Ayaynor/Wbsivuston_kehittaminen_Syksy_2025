@@ -217,7 +217,7 @@ h3 {
 }
 
 .gallery-column {
-    flex: 50%;
+    flex: 100%;
     max-width: 50%;
     padding: 0 4px;
 }

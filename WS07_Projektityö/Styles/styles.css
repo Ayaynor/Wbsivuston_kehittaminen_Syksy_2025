@@ -235,7 +235,7 @@ h3 {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 450px) {
     .gallery-column {
         flex: 100%;
         max-width: 100%;

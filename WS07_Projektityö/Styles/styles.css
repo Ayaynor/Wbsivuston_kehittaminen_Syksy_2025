@@ -21,6 +21,11 @@ body {
 .offcanvas-body, .offcanvas-header{
     background-color: #14142f;
 }
+
+.btn-close {
+    filter: invert(1);
+}
+
 .nav-link {
     color: #babaff;
 }

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Leo&Pablo - Pablo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="Styles/styles.css">
@@ -16,7 +16,7 @@
             <!--navigointiin lisätty koristeeksi itse luoto logo-->
             <a class="navbar-brand" href="index.html"><img class="LPlogo" src="Images/LP-Logo_B_wide.png" alt="Logo" width="150" height="50"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" role="dialog" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <!--Myös avattavan navigoinnin yläreunassa on koristeena itse luotu logo-->
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="LPlogo" src="Images/LP-Logo_W_wide.png" alt="Logo" width="150" height="50"></h5>
@@ -40,7 +40,6 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Workshop-tasks</a>
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="https://ayaynor.github.io/Wbsivuston_kehittaminen_Syksy_2025/">All Tasks</a></li>
-                                <hr class="dropdown-divider">
                             <li><a class="dropdown-item" href="https://ayaynor.github.io/Wbsivuston_kehittaminen_Syksy_2025/WS01_HTML/">WS01 - HTML Intro</a></li>
                             <li><a class="dropdown-item" href="https://ayaynor.github.io/Wbsivuston_kehittaminen_Syksy_2025/WS02_CSS_MyOwn/">WS02 - CSS Basics</a></li>
                             <li><a class="dropdown-item" href="https://ayaynor.github.io/Wbsivuston_kehittaminen_Syksy_2025/WS03_CSS_Advanced/">WS03 - Advanced CSS</a></li>
@@ -65,7 +64,7 @@
         </div>
 
         <!--Mode-Toggle-->
-        <button class="dark-mode-btn" onclick="myDarkMode()" >&#127763</button>
+        <button class="dark-mode-btn" onclick="myDarkMode()" >&#127763;</button>
         
         <!--Statistiikkakortteja-->
         <div>
@@ -104,13 +103,13 @@
         <!--Pablon lempparit-lista taulukkona-->
         <div class="fav-list">
             <h2>Favourite Things - TOP 5</h2>
-                <ul class="fs-2">
-                    <li>&#128571 Chin Scratches</li>
-                    <li>&#127775 Spring Toys</li>
-                    <li>&#127907 Feather Wand</li>
-                    <li>&#127831 Food</li>
-                    <li>&#128572 Nighttime Zoomies</li>
-                </ul>
+            <ul class="fs-2">
+                <li>&#128571; Chin Scratches</li>
+                <li>&#127775; Spring Toys</li>
+                <li>&#127907; Feather Wand</li>
+                <li>&#127831; Food</li>
+                <li>&#128572; Nighttime Zoomies</li>
+            </ul>
         </div>
 
         <!--Takaisin ylös-nappi-->
